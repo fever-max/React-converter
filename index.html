@@ -23,6 +23,10 @@
           setFlipped((current) => !current);
         };
 
+        const minutesToHours = (minutes) => {
+          return minutes >= 60 ? Math.round(minutes / 60) : 0;
+        };
+
         return (
           <div id="main">
             <div>
@@ -39,7 +43,7 @@
             <div>
               <label htmlFor="hours">Hours: </label>
               <input
-                value={flipped ? amount : Math.round(amount / 60)}
+                value={flipped ? amount : minutesToHours(amount)}
                 id="hours"
                 placeholder="Hours"
                 type="number"
