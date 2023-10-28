@@ -25,7 +25,7 @@ h1 {
 
 div {
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 500px;
 }
 
 #root {
@@ -39,9 +39,11 @@ div {
   color: white;
   width: 450px;
   margin: 0;
-  padding: 0;
+  padding: 50px;
   box-sizing: border-box;
   display: block;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
 }
 
 #main div {
@@ -56,7 +58,7 @@ select {
   color: white;
   font-size: 15px;
   background-color: inherit;
-  width: 100%;
+  width: 330px;
   height: 30px;
   text-align: center;
   margin-bottom: 30px;
@@ -75,13 +77,14 @@ select:focus {
 }
 
 input {
+  width: 340px;
   color: white;
   padding: 5px;
   font-size: 16px;
   border: none;
   background: transparent;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 input:focus {
